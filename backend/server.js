@@ -9,7 +9,7 @@ const claimsRoutes = require('./routes/claims');
 const createModelsMiddleware = require('./middleware/model-middleware');
 
 const app = express();
-const port = 8000;
+const port = process.env.PORT || 8000;
 const cors = require('cors');
 app.use(bodyParser.json());
 app.use(cors()) // This has to be before any routes
