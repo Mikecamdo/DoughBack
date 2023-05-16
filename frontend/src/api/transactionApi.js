@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const apiEndpoint = "//localhost:8000";
+const apiEndpoint = "https://doughback-production.up.railway.app";
 
 export const addTransaction = (transaction) =>
   new Promise((resolve, reject) => {
