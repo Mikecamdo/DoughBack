@@ -12,7 +12,7 @@ const app = express();
 const port = process.env.PORT || 8000;
 const cors = require('cors');
 app.use(bodyParser.json());
-app.use(cors()) // This has to be before any routes
+app.use(cors());
 app.use(createModelsMiddleware);
 
 // Enable JSON parsing
