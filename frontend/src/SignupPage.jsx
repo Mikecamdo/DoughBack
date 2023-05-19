@@ -13,7 +13,6 @@ import { useNavigate } from "react-router-dom";
 import Dropdown from "react-bootstrap/Dropdown";
 import Navbar from "react-bootstrap/Navbar";
 import Alert from "react-bootstrap/Alert";
-import DropdownButton from "react-bootstrap/DropdownButton";
 //CEO, Finacial Manager, Employee
 const employeeValues = {
   name: "",
@@ -436,7 +435,7 @@ export const SignupPage = ({ setCurrentUser }) => {
           </Form>
         </div>
       </div>
-      </div>
+    </div>
     </>
   );
 };
