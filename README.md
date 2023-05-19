@@ -1,33 +1,17 @@
-# DoughBack Overview
+![](https://github.com/Mikecamdo/DoughBack/blob/main/frontend/public/logo-transparent-png.png)
 
-A website for employees who go on business lunches to be able to request reimbursements for the expenses. Financials are the ones who approve/deny requests and are the main financial team people (treasurers, etc.), while all other employees of a company are the ones who submit claims. The CEO has ultimate authority over everything.
+##### A website for employees of a company to submit reimbursement requests for transactions they made on behalf of their company.
 
-# TO DO LIST
+##### View the website at: https://doughback.vercel.app/
 
-  Priorities (FOCUS ON THESE TASK FIRST):
- Sort claims by date, price, name
-  Creat account for Ceo
-  Filtering Transactions (employees and ceos) 
-  Approve and deny ( if denied then you can appeal it) 
- Ceo can remove employees 
- Delete and edit transactions 
- Choose how much you will be reimburse 
+# Project Details
 
- 
-  
-  Side Tasks:
-  1. Work on styling
-  2. Fix scrolling effect on website landing page
-  3. Fix styling of home page
-  
-        *^^Targets goals for Sprint 4^^*
+This website was created during the Spring 2023 semester in the combined Database/GUI lab at SMU. Our team was tasked with creating the product idea of another group in the lab; the website was completed using Agile and Scrum techniques over 5 Sprints. We completed 32/44 user stories, for a completion rate of 72.7%.
 
-# COMPLETED TASKS
-1. **Webiste Name**: DoughBack
-2. Setup AWS server
-3. Made tables for backend
-4. Design for login and sign-up page
-5. Website Logo
-6. ER Diagram
+# Project Implementation
+For this project, we used the following technologies:
 
+- Frontend: React.js, Bootstrap/React Bootstrap, Axios
+- Backend: Express (Node.js), Knex.js
 
+The frontend was deployed using [Vercel](https://vercel.com), while the Node.js server was deployed on [Railway](https://railway.app) and the MySQL database was deployed on [AWS](https://aws.amazon.com/).
