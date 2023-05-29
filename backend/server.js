@@ -20,12 +20,14 @@ app.use(express.json())
 
 // Connect to mysql
 const mysql = require('mysql');
-const connection = mysql.createConnection({
+const connection = mysql.createPool({
+  connectionLimit: 5,
   host: process.env.MYSQL_CLOUD_HOST,
   user: process.env.MYSQL_CLOUD_USER,
   password: process.env.MYSQL_CLOUD_PASS,
   port: process.env.MYSQL_PORT,
-  database: process.env.MYSQL_DB
+  database: process.env.MYSQL_DB,
+  debug: false
 })
 
 connection.connect()
