@@ -30,7 +30,17 @@ const connection = mysql.createPool({
   debug: false
 })
 
-connection.connect()
+connection.on('connection', con => {
+  console.log('Database successfully connected');
+
+  con.on('error', err => {
+    console.error(new Date(), 'MySQL error', err.code);
+  });
+
+  con.on('close', err => {
+    console.error(new Date(), 'MySQL close', err);
+  });
+});
 
 // API routes
 app.use('/employees', employeesRoutes);
@@ -40,5 +50,5 @@ app.use('/claims', claimsRoutes);
 
 // Start server
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+    console.log(`Example app listening on port ${port}`);
 })
